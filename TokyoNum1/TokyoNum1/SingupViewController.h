@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SingupViewController : UIViewController
+@interface SingupViewController : UIViewController<UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *txtName;
+@property (weak, nonatomic) IBOutlet UITextField *txtEmail;
+@property (weak, nonatomic) IBOutlet UITextField *txtPassword;
+@property (weak, nonatomic) IBOutlet UITextField *txtRePassword;
+
+
+- (IBAction)btnSingup:(id)sender;
+- (IBAction)btnClose:(id)sender;
 
 @end

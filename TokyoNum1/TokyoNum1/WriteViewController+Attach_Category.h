@@ -10,4 +10,13 @@
 
 @interface WriteViewController (Attach_Category)
 
+- (void)Icon;
+- (void)Photo;
+- (void)Video;
+- (void)Location;
+- (void)Friend;
+
+- (void)Done;
+
+
 @end

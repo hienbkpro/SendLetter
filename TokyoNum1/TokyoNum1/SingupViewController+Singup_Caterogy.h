@@ -10,4 +10,8 @@
 
 @interface SingupViewController (Singup_Caterogy)
 
+-(void)SingUp;
+
+-(void)ToLoginPage;
+
 @end

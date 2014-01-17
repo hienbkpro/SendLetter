@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TimeLine_ListViewController : UIViewController
+#import "Timeline.h"
+
+@interface TimeLine_ListViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate>
+{
+    Timeline *timeline;
+    Timeline *timeline1;
+    Timeline *timeline2;
+    Timeline *timeline3;
+    Timeline *timeline4;
+    Timeline *timeline5;
+    
+    NSArray *arrData;
+}
 
 @end

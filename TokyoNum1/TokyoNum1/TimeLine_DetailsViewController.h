@@ -7,7 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Timeline.h"
 
-@interface TimeLine_DetailsViewController : UIViewController
+@interface TimeLine_DetailsViewController : UITableViewController
+
+@property(strong,nonatomic) NSString *avatar;
+@property(strong,nonatomic) NSString *name;
+@property(strong,nonatomic) NSString *date;
+@property(strong,nonatomic) NSString *content;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imgAvatar;
+@property (weak, nonatomic) IBOutlet UILabel *txtname;
+@property (weak, nonatomic) IBOutlet UILabel *txtDate;
+@property (weak, nonatomic) IBOutlet UITextView *txtContent;
+
+
+
+@property(strong, nonatomic) Timeline *tmObject;
+
+- (IBAction)btnClose:(id)sender;
 
 @end

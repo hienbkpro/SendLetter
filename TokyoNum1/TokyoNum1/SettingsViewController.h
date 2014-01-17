@@ -10,4 +10,9 @@
 
 @interface SettingsViewController : UIViewController
 
+
+- (IBAction)btnProfile:(id)sender;
+
+- (IBAction)btnLogout:(id)sender;
+
 @end

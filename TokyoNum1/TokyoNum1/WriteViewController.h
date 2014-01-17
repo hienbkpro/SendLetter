@@ -10,4 +10,16 @@
 
 @interface WriteViewController : UIViewController
 
+
+
+@property (weak, nonatomic) IBOutlet UITextView *txtText;
+
+- (IBAction)btnIcon:(id)sender;
+- (IBAction)btnPhoto:(id)sender;
+- (IBAction)btnVideo:(id)sender;
+- (IBAction)btnLocation:(id)sender;
+- (IBAction)btnFriend:(id)sender;
+
+- (IBAction)btnDone:(id)sender;
+
 @end

@@ -7,6 +7,9 @@
 //
 
 #import "TimeLine_DetailsViewController.h"
+#import "TimeLine_DetailsViewController+TimeLine_Details_Category.h"
+#import "TimeLine_DetailsViewController+Share_Caterory.h"
+#import "TimeLine_DetailsViewController+Timeline_DetailsInsertView.h"
 
 @interface TimeLine_DetailsViewController ()
 
@@ -26,8 +29,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
+//    [self ViewLoadInsert];
+    
+    self.imgAvatar.image = [UIImage imageNamed:self.avatar];
+    self.txtname.text = self.name;
+    self.txtDate.text = self.date;
+    self.txtContent.text = self.content;
+    
+ 
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -35,4 +48,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+//close
+- (IBAction)btnClose:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
 @end

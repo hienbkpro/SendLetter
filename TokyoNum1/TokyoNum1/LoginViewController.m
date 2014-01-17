@@ -7,6 +7,10 @@
 //
 
 #import "LoginViewController.h"
+#import "LoginViewController+Login_Category.h"
+
+//#import "TimeLine_ListViewController.h"
+
 
 @interface LoginViewController ()
 
@@ -26,13 +30,54 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
+    self.txtEmail.delegate=self;
+    self.txtPassword.delegate=self;
+    
+    
+    //
+    [self GetVuesFromTextField];
 }
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+//Login
+- (IBAction)btnLogin:(id)sender {
+
+    [self Login];
+    
+    NSLog(@"Login");
+}
+
+
+
+
+
+//- (IBAction)btnClose:(id)sender {
+//
+//    [self dismissViewControllerAnimated:YES completion:NULL];
+//}
+
+
+
+
+
+//hide keyboard
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+    
 }
 
 @end

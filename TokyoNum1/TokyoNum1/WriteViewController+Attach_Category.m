@@ -10,4 +10,45 @@
 
 @implementation WriteViewController (Attach_Category)
 
+
+//icon
+- (void)Icon{
+
+    NSLog(@"Icon");
+}
+
+
+//Photo
+- (void)Photo{
+
+    NSLog(@"Photo");
+}
+
+
+//Video
+- (void)Video{
+
+    NSLog(@"Video");
+}
+
+//Location
+- (void)Location{
+
+     NSLog(@"Location");
+}
+
+
+//Friend
+- (void)Friend{
+    
+    NSLog(@"Friend");
+}
+
+
+//Done
+- (void)Done{
+ 
+     NSLog(@"Done");
+}
+
 @end

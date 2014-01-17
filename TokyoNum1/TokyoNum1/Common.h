@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 PhamNgocTam. All rights reserved.
 //
 
-#ifndef TokyoNum1_Common_h
-#define TokyoNum1_Common_h
-
-
-
-#endif
+//#ifndef TokyoNum1_Common_h
+//#define TokyoNum1_Common_h
+//
+//
+//
+//#endif

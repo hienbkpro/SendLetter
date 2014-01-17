@@ -7,6 +7,9 @@
 //
 
 #import "WriteViewController.h"
+#import "WriteViewController+Attach_Category.h"
+#import "WriteViewController+WriteInsertView.h"
+
 
 @interface WriteViewController ()
 
@@ -26,13 +29,58 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [self ViewLoadInsert];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+
+//icon
+- (IBAction)btnIcon:(id)sender {
+    
+    [self Icon];
+}
+
+
+//photo
+- (IBAction)btnPhoto:(id)sender {
+
+    [self Photo];
+}
+
+
+//video
+- (IBAction)btnVideo:(id)sender {
+
+    [self Video];
+}
+
+
+//Location
+- (IBAction)btnLocation:(id)sender {
+
+    [self Location];
+}
+
+
+//Friend
+- (IBAction)btnFriend:(id)sender {
+
+    [self Friend];
+}
+
+
+//Done
+- (IBAction)btnDone:(id)sender {
+
+    [self Done];
+   
 }
 
 @end
