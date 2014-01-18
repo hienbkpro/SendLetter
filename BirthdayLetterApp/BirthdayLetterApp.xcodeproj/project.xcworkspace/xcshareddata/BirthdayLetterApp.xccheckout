@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7E08B83D-5176-4FD2-8415-DD09FC474478</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BirthdayLetterApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>59C18F02-44C2-40F5-8840-2F6E09F6D33A</key>
+		<string>ssh://github.com/ngoctamtl/birthday_letter_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BirthdayLetterApp/BirthdayLetterApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>59C18F02-44C2-40F5-8840-2F6E09F6D33A</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/ngoctamtl/birthday_letter_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>59C18F02-44C2-40F5-8840-2F6E09F6D33A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>59C18F02-44C2-40F5-8840-2F6E09F6D33A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>birthday_letter_ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
