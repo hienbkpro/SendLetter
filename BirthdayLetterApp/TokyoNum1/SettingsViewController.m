@@ -10,6 +10,8 @@
 #import "LoginViewController.h"
 #import "StartViewController.h"
 #import "ProfileSettingViewController.h"
+#import "SettingsViewController+Settings_InsertView.h"
+
 
 @interface SettingsViewController ()
 
@@ -29,6 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self ViewLoadInsert];
 
 }
 

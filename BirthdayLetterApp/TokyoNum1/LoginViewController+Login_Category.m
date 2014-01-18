@@ -11,16 +11,6 @@
 
 @implementation LoginViewController (Login_Category)
 
-
-//get values
--(void)GetVuesFromTextField{
-
-    self.txtEmail.text=@"demo@framgia.com";
-    self.txtPassword.text=@"123456";
-
-}
-
-
 //Login acttion
 -(void)Login{
 

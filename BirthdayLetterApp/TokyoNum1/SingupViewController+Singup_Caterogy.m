@@ -22,7 +22,7 @@
     NSLog(@"Email is :%@",email);
     NSLog(@"Password is :%@",password);
     
-    //viet login tu day
+    //viet Singup dang ky tu day
 }
 
 

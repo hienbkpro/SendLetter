@@ -10,7 +10,6 @@
 
 @interface LoginViewController (Login_Category)
 
--(void)GetVuesFromTextField;
 -(void)Login;
 
 @end
