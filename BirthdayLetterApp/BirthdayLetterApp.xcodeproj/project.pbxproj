@@ -53,6 +53,8 @@
 		C6C153C51887ED8300325BBC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C153C41887ED8300325BBC /* Social.framework */; };
 		C6C153C71887ED8A00325BBC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C153C61887ED8A00325BBC /* CoreLocation.framework */; };
 		C6C153C91887EDE300325BBC /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C153C81887EDE300325BBC /* CoreImage.framework */; };
+		E45D33ED188B013300C32314 /* SettingSendLetter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45D33EC188B013300C32314 /* SettingSendLetter.storyboard */; };
+		E45D33F1188B034500C32314 /* SettingSendMailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45D33F0188B034500C32314 /* SettingSendMailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +142,9 @@
 		C6C153C41887ED8300325BBC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C6C153C61887ED8A00325BBC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C6C153C81887EDE300325BBC /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		E45D33EC188B013300C32314 /* SettingSendLetter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SettingSendLetter.storyboard; path = storyboard/SettingSendLetter.storyboard; sourceTree = "<group>"; };
+		E45D33EF188B034500C32314 /* SettingSendMailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingSendMailViewController.h; path = "Setting Send Mail/SettingSendMailViewController.h"; sourceTree = "<group>"; };
+		E45D33F0188B034500C32314 /* SettingSendMailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingSendMailViewController.m; path = "Setting Send Mail/SettingSendMailViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +323,7 @@
 				C61C2ABB18877C2400BEE3F8 /* SBTop.storyboard */,
 				C61C2ABD18877C6000BEE3F8 /* SBMain.storyboard */,
 				C61C2ABF18877D2600BEE3F8 /* SBLogin.storyboard */,
+				E45D33EC188B013300C32314 /* SettingSendLetter.storyboard */,
 			);
 			name = StoryBoard;
 			sourceTree = "<group>";
@@ -520,6 +526,7 @@
 		C69A18C21888D16400FECAB2 /* Classese */ = {
 			isa = PBXGroup;
 			children = (
+				E45D33EE188B030300C32314 /* Setting Send Mail */,
 				C69A18C71888DBB600FECAB2 /* Start_Conteoller */,
 				C61C2ACE1887D3F700BEE3F8 /* Singup_Controller */,
 				C61C2ACD1887D3EA00BEE3F8 /* Login_Controller */,
@@ -611,6 +618,15 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
+		E45D33EE188B030300C32314 /* Setting Send Mail */ = {
+			isa = PBXGroup;
+			children = (
+				E45D33EF188B034500C32314 /* SettingSendMailViewController.h */,
+				E45D33F0188B034500C32314 /* SettingSendMailViewController.m */,
+			);
+			name = "Setting Send Mail";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -689,6 +705,7 @@
 				C61C2AB818877BB200BEE3F8 /* SBTimeline.storyboard in Resources */,
 				C69A18C11888CD1E00FECAB2 /* avt.jpg in Resources */,
 				C61C2ABC18877C2400BEE3F8 /* SBTop.storyboard in Resources */,
+				E45D33ED188B013300C32314 /* SettingSendLetter.storyboard in Resources */,
 				C61C2ABE18877C6000BEE3F8 /* SBMain.storyboard in Resources */,
 				C61931601889321D008F5F2A /* auze.jpg in Resources */,
 				C61C2AB418877B0A00BEE3F8 /* SBWrite.storyboard in Resources */,
@@ -736,6 +753,7 @@
 				C61C2A8618877A3200BEE3F8 /* main.m in Sources */,
 				C61C2AE71887D5D800BEE3F8 /* WriteViewController.m in Sources */,
 				C61C2AD81887D51200BEE3F8 /* ProfileSettingViewController.m in Sources */,
+				E45D33F1188B034500C32314 /* SettingSendMailViewController.m in Sources */,
 				C61C2B051887DDF100BEE3F8 /* LoginViewController+Login_Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
