@@ -32,6 +32,7 @@
     [self ViewLoadInsert];
 }
 
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

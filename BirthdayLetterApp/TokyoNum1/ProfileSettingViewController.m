@@ -7,6 +7,7 @@
 //
 
 #import "ProfileSettingViewController.h"
+#import "ProfileSettingViewController+ProfileSettings_InsertView.h"
 
 @interface ProfileSettingViewController ()
 
@@ -26,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	[self ViewLoadInsert];
 }
 
 - (void)didReceiveMemoryWarning

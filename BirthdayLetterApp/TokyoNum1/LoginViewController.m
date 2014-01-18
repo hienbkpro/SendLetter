@@ -28,10 +28,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.txtEmail.text=@"demo@framgia.com";
+    self.txtPassword.text=@"123456";
 	
     self.txtEmail.delegate=self;
     self.txtPassword.delegate=self;
-    [self GetVuesFromTextField];
 }
 
 

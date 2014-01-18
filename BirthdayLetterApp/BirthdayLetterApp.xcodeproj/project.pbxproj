@@ -40,6 +40,8 @@
 		C61C2AF81887DCB300BEE3F8 /* TimeLine_DetailsViewController+Share_Caterory.m in Sources */ = {isa = PBXBuildFile; fileRef = C61C2AF71887DCB300BEE3F8 /* TimeLine_DetailsViewController+Share_Caterory.m */; };
 		C61C2B021887DDDE00BEE3F8 /* SingupViewController+Singup_Caterogy.m in Sources */ = {isa = PBXBuildFile; fileRef = C61C2B011887DDDE00BEE3F8 /* SingupViewController+Singup_Caterogy.m */; };
 		C61C2B051887DDF100BEE3F8 /* LoginViewController+Login_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C61C2B041887DDF100BEE3F8 /* LoginViewController+Login_Category.m */; };
+		C643ED5D188A2A4E005DFD86 /* SettingsViewController+Settings_InsertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C643ED5C188A2A4E005DFD86 /* SettingsViewController+Settings_InsertView.m */; };
+		C643ED62188A2CF8005DFD86 /* ProfileSettingViewController+ProfileSettings_InsertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C643ED61188A2CF8005DFD86 /* ProfileSettingViewController+ProfileSettings_InsertView.m */; };
 		C69A18C11888CD1E00FECAB2 /* avt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C69A18C01888CD1E00FECAB2 /* avt.jpg */; };
 		C69A18C61888D21100FECAB2 /* Timeline.m in Sources */ = {isa = PBXBuildFile; fileRef = C69A18C51888D21100FECAB2 /* Timeline.m */; };
 		C69A18CA1888DBE000FECAB2 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C69A18C91888DBE000FECAB2 /* StartViewController.m */; };
@@ -114,6 +116,10 @@
 		C61C2B011887DDDE00BEE3F8 /* SingupViewController+Singup_Caterogy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SingupViewController+Singup_Caterogy.m"; sourceTree = "<group>"; };
 		C61C2B031887DDF100BEE3F8 /* LoginViewController+Login_Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoginViewController+Login_Category.h"; sourceTree = "<group>"; };
 		C61C2B041887DDF100BEE3F8 /* LoginViewController+Login_Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LoginViewController+Login_Category.m"; sourceTree = "<group>"; };
+		C643ED5B188A2A4E005DFD86 /* SettingsViewController+Settings_InsertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SettingsViewController+Settings_InsertView.h"; sourceTree = "<group>"; };
+		C643ED5C188A2A4E005DFD86 /* SettingsViewController+Settings_InsertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SettingsViewController+Settings_InsertView.m"; sourceTree = "<group>"; };
+		C643ED60188A2CF8005DFD86 /* ProfileSettingViewController+ProfileSettings_InsertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProfileSettingViewController+ProfileSettings_InsertView.h"; sourceTree = "<group>"; };
+		C643ED61188A2CF8005DFD86 /* ProfileSettingViewController+ProfileSettings_InsertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProfileSettingViewController+ProfileSettings_InsertView.m"; sourceTree = "<group>"; };
 		C69A18C01888CD1E00FECAB2 /* avt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avt.jpg; sourceTree = "<group>"; };
 		C69A18C41888D21100FECAB2 /* Timeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timeline.h; sourceTree = "<group>"; };
 		C69A18C51888D21100FECAB2 /* Timeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timeline.m; sourceTree = "<group>"; };
@@ -287,7 +293,7 @@
 			children = (
 				C61C2AFD1887DD7D00BEE3F8 /* First */,
 				C61C2AEE1887D6A200BEE3F8 /* Share_Category */,
-				C61C2AEA1887D61D00BEE3F8 /* Top_Category */,
+				C61C2AEA1887D61D00BEE3F8 /* Settings_Category */,
 				C61C2AE91887D61000BEE3F8 /* Timeline_Category */,
 				C61C2AE81887D5FD00BEE3F8 /* Write_Category */,
 			);
@@ -297,7 +303,7 @@
 		C61C2AB118877AA700BEE3F8 /* ClassView */ = {
 			isa = PBXGroup;
 			children = (
-				C6C153C11887E52200325BBC /* Top */,
+				C6C153C11887E52200325BBC /* Settings */,
 				C6C153C01887E51600325BBC /* TimeLine */,
 				C6C153B71887E4B100325BBC /* Write */,
 			);
@@ -334,13 +340,13 @@
 			name = TimeLine_Controller;
 			sourceTree = "<group>";
 		};
-		C61C2ACC1887D3CF00BEE3F8 /* TOP_Controller */ = {
+		C61C2ACC1887D3CF00BEE3F8 /* Settings_Controller */ = {
 			isa = PBXGroup;
 			children = (
 				C61C2AD91887D51900BEE3F8 /* Settings_Controller */,
 				C61C2AD51887D4E700BEE3F8 /* ProfileSetting_Controller */,
 			);
-			name = TOP_Controller;
+			name = Settings_Controller;
 			sourceTree = "<group>";
 		};
 		C61C2ACD1887D3EA00BEE3F8 /* Login_Controller */ = {
@@ -414,12 +420,12 @@
 			name = Timeline_Category;
 			sourceTree = "<group>";
 		};
-		C61C2AEA1887D61D00BEE3F8 /* Top_Category */ = {
+		C61C2AEA1887D61D00BEE3F8 /* Settings_Category */ = {
 			isa = PBXGroup;
 			children = (
-				C61C2AF51887DC7800BEE3F8 /* Top_Profile */,
+				C61C2AF51887DC7800BEE3F8 /* Settings_Profile */,
 			);
-			name = Top_Category;
+			name = Settings_Category;
 			sourceTree = "<group>";
 		};
 		C61C2AEB1887D63100BEE3F8 /* Attach_Category */ = {
@@ -440,13 +446,13 @@
 			name = Share_Category;
 			sourceTree = "<group>";
 		};
-		C61C2AF51887DC7800BEE3F8 /* Top_Profile */ = {
+		C61C2AF51887DC7800BEE3F8 /* Settings_Profile */ = {
 			isa = PBXGroup;
 			children = (
 				C61C2AF21887DC7300BEE3F8 /* ProfileSettingViewController+Top_Profile_Category.h */,
 				C61C2AF31887DC7300BEE3F8 /* ProfileSettingViewController+Top_Profile_Category.m */,
 			);
-			name = Top_Profile;
+			name = Settings_Profile;
 			sourceTree = "<group>";
 		};
 		C61C2AFB1887DD4700BEE3F8 /* Images */ = {
@@ -493,13 +499,31 @@
 			name = Singup_Caterogy;
 			sourceTree = "<group>";
 		};
+		C643ED5E188A2C99005DFD86 /* Main_Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C643ED5B188A2A4E005DFD86 /* SettingsViewController+Settings_InsertView.h */,
+				C643ED5C188A2A4E005DFD86 /* SettingsViewController+Settings_InsertView.m */,
+			);
+			name = Main_Settings;
+			sourceTree = "<group>";
+		};
+		C643ED5F188A2CB5005DFD86 /* Profile_Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C643ED60188A2CF8005DFD86 /* ProfileSettingViewController+ProfileSettings_InsertView.h */,
+				C643ED61188A2CF8005DFD86 /* ProfileSettingViewController+ProfileSettings_InsertView.m */,
+			);
+			name = Profile_Settings;
+			sourceTree = "<group>";
+		};
 		C69A18C21888D16400FECAB2 /* Classese */ = {
 			isa = PBXGroup;
 			children = (
 				C69A18C71888DBB600FECAB2 /* Start_Conteoller */,
 				C61C2ACE1887D3F700BEE3F8 /* Singup_Controller */,
 				C61C2ACD1887D3EA00BEE3F8 /* Login_Controller */,
-				C61C2ACC1887D3CF00BEE3F8 /* TOP_Controller */,
+				C61C2ACC1887D3CF00BEE3F8 /* Settings_Controller */,
 				C61C2ACB1887D3C000BEE3F8 /* TimeLine_Controller */,
 				C61C2ACA1887D37000BEE3F8 /* WriteController */,
 			);
@@ -578,11 +602,13 @@
 			name = TimeLine;
 			sourceTree = "<group>";
 		};
-		C6C153C11887E52200325BBC /* Top */ = {
+		C6C153C11887E52200325BBC /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				C643ED5F188A2CB5005DFD86 /* Profile_Settings */,
+				C643ED5E188A2C99005DFD86 /* Main_Settings */,
 			);
-			name = Top;
+			name = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -695,11 +721,13 @@
 				C6C153B21887E3D100325BBC /* TimeLine_DetailsViewController+TimeLine_Details_Category.m in Sources */,
 				C61C2A8D18877A3200BEE3F8 /* TokyoNum1.xcdatamodeld in Sources */,
 				C61C2AF81887DCB300BEE3F8 /* TimeLine_DetailsViewController+Share_Caterory.m in Sources */,
+				C643ED5D188A2A4E005DFD86 /* SettingsViewController+Settings_InsertView.m in Sources */,
 				C6C153BB1887E4EB00325BBC /* TimeLine_ListViewController+TimeLine_ListInsertView.m in Sources */,
 				C61C2AD41887D4DF00BEE3F8 /* LoginViewController.m in Sources */,
 				C61C2B021887DDDE00BEE3F8 /* SingupViewController+Singup_Caterogy.m in Sources */,
 				C6C153B61887E4A700325BBC /* WriteViewController+WriteInsertView.m in Sources */,
 				C61C2AF11887DC1300BEE3F8 /* WriteViewController+Attach_Category.m in Sources */,
+				C643ED62188A2CF8005DFD86 /* ProfileSettingViewController+ProfileSettings_InsertView.m in Sources */,
 				C61C2AD11887D4D000BEE3F8 /* SingupViewController.m in Sources */,
 				C61C2AF41887DC7300BEE3F8 /* ProfileSettingViewController+Top_Profile_Category.m in Sources */,
 				C69A18CA1888DBE000FECAB2 /* StartViewController.m in Sources */,
