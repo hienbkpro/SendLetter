@@ -9,12 +9,19 @@
 #import "WriteViewController+WriteInsertView.h"
 #import "CheckScreenHeight.h"
 
+#define NAV 64
 
 @implementation WriteViewController (WriteInsertView)
 
 
 -(void)ViewLoadInsert{
+    
     NSLog(@"View Load Insert");
 }
+
+
+
+
+
 
 @end
