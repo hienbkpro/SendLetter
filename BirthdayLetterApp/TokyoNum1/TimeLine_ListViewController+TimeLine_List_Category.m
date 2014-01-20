@@ -20,6 +20,7 @@
     timeline3 =[Timeline new];
     timeline4 =[Timeline new];
     timeline5 =[Timeline new];
+    timeline6 =[Timeline new];
     
     //set object
     timeline.avatar =@"avt.jpg";
@@ -52,10 +53,15 @@
     timeline5.name=@"username #5";
     timeline5.date=@"22/01/2014";
     timeline5.content=@"gewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewg";
-//    timeline.images = [NSArray arrayWithObjects:@"avt.jpg",@"auze.jpg",@"auze.jpg",@"auze.jpg",@"avt.jpg",@"avt.jpg",@"avt.jpg", nil];
+    
+    timeline6.avatar =@"avt.jpg";
+    timeline6.name=@"username #6";
+    timeline6.date=@"22/01/2014";
+timeline6.content=@"gewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewggewgewg";
+
     
     //push data from object to array
-    arrData  = [NSArray arrayWithObjects:timeline,timeline1,timeline2,timeline3,timeline4,timeline5, nil];
+    arrData  = [NSArray arrayWithObjects:timeline,timeline1,timeline2,timeline3,timeline4,timeline5,timeline6 , nil];
 
     
 }
