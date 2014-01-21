@@ -46,11 +46,11 @@
         [_httpRequestOperationManager POST:kFRUserLogin
                                   parameters:data
                                      success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                                         NSString *convertedString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-                                         NSLog(@"%@", convertedString);
+                                         NSLog(@"%@",responseObject);
                                      } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                                          NSLog(@"Error: %@", [error description]);
                                      }];
+        
     }
 }
 
