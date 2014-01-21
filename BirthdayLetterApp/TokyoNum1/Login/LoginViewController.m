@@ -31,6 +31,10 @@
     NSURL *baseURL = [[NSURL alloc] initWithString:BASE_URL];
     _httpRequestOperationManager = [[AFHTTPRequestOperationManager alloc]
                                     initWithBaseURL:baseURL];
+//    [FBSession]
+    /*! @abstract Gets the FBAccessTokenData for the session */
+//    @property (readonly, copy) FBAccessTokenData *accessTokenData;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,7 +54,6 @@
                                      } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                                          NSLog(@"Error: %@", [error description]);
                                      }];
-        
     }
 }
 
