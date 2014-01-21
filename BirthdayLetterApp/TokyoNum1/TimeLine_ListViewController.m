@@ -74,14 +74,14 @@
     if (cell==nil) {
         
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-
+        
     }
 
     data_ = [arrData objectAtIndex:indexPath.row];
     
     UIImageView *avatar = (UIImageView *)[cell viewWithTag:100];
     avatar.image = [UIImage imageNamed:data_.avatar];
-    avatar.layer.cornerRadius = 20;
+    avatar.layer.cornerRadius = 25;
     avatar.layer.masksToBounds = YES;
     
     
@@ -97,25 +97,59 @@
     
     
     UIScrollView *viewImage = (UIScrollView *)[cell viewWithTag:104];
-    viewImage.pagingEnabled = YES;
+    
+    viewImage.contentSize = CGSizeMake(1600, 165);   //scroll view size
+    
     viewImage.backgroundColor = [UIColor clearColor];
     
-    // to hide scroll indicators!
-    viewImage.showsVerticalScrollIndicator = YES;
+    //    cl.showsVerticalScrollIndicator = YES;    // to hide scroll indicators!
     
-    //by default, it shows!
-    viewImage.showsHorizontalScrollIndicator = YES;
+    viewImage.showsHorizontalScrollIndicator = YES; //by default, it shows!
     
-    //say "NO" to disable scroll
-    viewImage.scrollEnabled = YES;
+    viewImage.scrollEnabled = YES;                 //say "NO" to disable scroll
     
+    
+    
+    //
+    
+    
+
     for (int i=0; i<images.count; i++) {
-        UIImageView *imgV1 = [[UIImageView alloc] initWithFrame:CGRectMake(i*307, 0, 307, 280)];
+
+   
+//    for (NSString *image in data_.images) {
+    
+        UIImageView *imgV1 = [[UIImageView alloc] initWithFrame:CGRectMake(i*175, 0, 165, 165)];
+        
+//        imgV1 = (UIImageView *)[cell viewWithTag:105];
+
         
         [imgV1 setImage:[UIImage imageNamed:images[i]]];
-        imgV1.layer.cornerRadius = 10;
+      
+        
+        //
+//        NSMutableString *img = [NSMutableString string];
+//        for (NSString *image in data_.images) {
+//            [img appendFormat:@"%@",image];
+//            
+//             [imgV1 setImage:[UIImage imageNamed:img]];
+//        }
+//
+//        NSLog(@"image is: %@",img);
+
+        
+        
+        imgV1.layer.cornerRadius = 2;
         imgV1.layer.masksToBounds = YES;
+        
+        
         imgV1.tag=i;
+        
+        
+//        NSLog(@"tags =: %d",imgV1.tag);
+        
+        
+        
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self
                                              
                                                                                     action:@selector(Clicked:)];
@@ -131,15 +165,8 @@
 
  }
     
-    //auto size a UIScrollView to fit the content
-    CGRect contentRect = CGRectZero;
-    for (UIView *view in viewImage.subviews) {
-        contentRect = CGRectUnion(contentRect, view.frame);
-    }
-    viewImage.contentSize = contentRect.size;
+    
 
-    
-    
     return cell;
     
 }
@@ -148,7 +175,7 @@
 -(void)Clicked:(UITapGestureRecognizer *)sender{
     
     UIButton *myBtn = (UIButton *)sender.view;
-    NSLog(@"tag here: %ld", (long)myBtn.tag);
+    NSLog(@"tag here: %d", myBtn.tag);
     
     //        NSLog(@"you are Clicked button: %@",myBtn);
     
