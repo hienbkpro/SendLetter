@@ -9,7 +9,7 @@
 #pragma mark - User Class
 // Class key
 extern NSString *const kFRUserClassKey;
-
+extern NSString *const kFRUserLogin;
 // Field keys
 extern NSString *const kFRUserUsername;
 extern NSString *const kFRUserPassword;
