@@ -14,9 +14,9 @@ NSString *const kFRUserClassKey                     = @"users";
 NSString *const kFRUserLogin                        = @"login_via_email";
 // Field keys
 NSString *const kFRUserUsername                     = @"user[username]";
-NSString *const kFRUserPassword                     = @"user[password]";
+NSString *const kFRUserPassword                     = @"password";
 NSString *const kFRUserPasswordConfirm              = @"user[password_confirm]";
-NSString *const kFRUserEmail                        = @"user[email]";
+NSString *const kFRUserEmail                        = @"email";
 
 
 
