@@ -18,7 +18,6 @@
     Timeline *timeline3;
     Timeline *timeline4;
     Timeline *timeline5;
-    Timeline *timeline6;
     NSArray *arrData;
 }
 

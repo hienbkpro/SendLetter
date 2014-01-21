@@ -66,23 +66,42 @@
 
 
 -(void)LoadImages{
+    self.scrolViewImages.contentSize = CGSizeMake(2360, 250);   //scroll view size
     self.scrolViewImages.backgroundColor = [UIColor clearColor];
     self.scrolViewImages.showsHorizontalScrollIndicator = YES; //by default, it shows!
     self.scrolViewImages.scrollEnabled = YES;                 //say "NO" to disable scroll
-    self.scrolViewImages.pagingEnabled = YES;
     
     //
     for (int i=0; i<images.count; i++) {
         
-        UIImageView *imgV1 = [[UIImageView alloc] initWithFrame:CGRectMake(i*292, 0, 292, 251)];
-
+        //    for (NSString *image in data_.images) {
+        
+        UIImageView *imgV1 = [[UIImageView alloc] initWithFrame:CGRectMake(i*260, 0, 250, 250)];
+        
+        //        imgV1 = (UIImageView *)[cell viewWithTag:105];
+        
+        
         [imgV1 setImage:[UIImage imageNamed:images[i]]];
         
-        imgV1.layer.cornerRadius = 10;
+        
+        //
+        //        NSMutableString *img = [NSMutableString string];
+        //        for (NSString *image in data_.images) {
+        //            [img appendFormat:@"%@",image];
+        //
+        //             [imgV1 setImage:[UIImage imageNamed:img]];
+        //        }
+        //
+        //        NSLog(@"image is: %@",img);
+        
+        
+        
+        imgV1.layer.cornerRadius = 2;
         imgV1.layer.masksToBounds = YES;
         
         imgV1.tag=i;
 
+        
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self
                                              
                                                                                     action:@selector(Clicked:)];
@@ -95,14 +114,6 @@
         [self.scrolViewImages addSubview:imgV1];
         
     }
-    
-    //auto size a UIScrollView to fit the content
-    CGRect contentRect = CGRectZero;
-    for (UIView *view in self.scrolViewImages.subviews) {
-        contentRect = CGRectUnion(contentRect, view.frame);
-    }
-    self.scrolViewImages.contentSize = contentRect.size;
-
 
 }
 
